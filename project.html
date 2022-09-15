@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>latihan 4</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li><img src="images/logo.png" alt="logo" width="35px"></li>
+                <li>Home</li>
+                <li>My Project</li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="#">Contact Me</a>
+        </div>
+    </nav>
+    <div >
+        <form onsubmit="addData(event)">
+            <h1> ADD MY PROJECT</h1>
+            <div>
+                <label for="input-project">Project Name</label>
+                <input type="text" name="" id="input-project">
+            </div>
+
+            <div class="date">
+                <div class="start-date">
+                    <label for="input-start">start Date</label>
+                    <input type="date" name="" id="input-start">
+                </div>
+                <div class="end-date">
+                    <label for="input-end">end Date</label>
+                    <input type="date" name="" id="input-end">
+                </div>
+            </div>
+            <div>
+                <label for="input-description">Description</label>
+                <textarea name="" id="input-description" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label>Technologies</label>
+                <table>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="Node Js" id="nodejs" />
+                      <label for="nodejs">Node Js</label>
+                    </td>
+                    <td>
+                      <input type="checkbox" name="Next Js" id="nextjs" />
+                      <label for="nextjs">Next Js</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="React JS" id="reactjs" />
+                      <label for="reactjs">React JS</label>
+                    </td>
+                    <td>
+                      <input type="checkbox" name="Typescript" id="typescript" />
+                      <label for="typescript">Typescript</label>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            
+            
+            <div>  
+              <label for="">Upload Image</label> 
+              <div class="attach" >
+                <div class="attach-left">
+                <i>attach file</i>
+                </div>
+                <div class="attach-right">
+                  <label for="input-image"><img src="images/attach.png" alt="" width="20px"></label>
+                  <input type="file"style="display:none"id="input-image">
+                </div>
+              </div>
+            </div>
+            <div>
+              <button>submit</button>
+            </div>
+        </form>
+    </div>
+    <hr/>
+    <div class="body-bottom"> 
+     <h1>MY PROJECT</h1>  
+        <div style="margin-top: 20px;">
+          <div class="card" id="card1">
+            <div>
+              <img src="images/bill-gates.jpg" alt="">
+            <div>
+                <h3>Dumbways Mobile App - 2021</h3>
+                <p class="time">durasi : 3 bulan</p>
+                <br>
+                <p>App that used for dumbways student, it was
+                    deployed and can downloaded on playstore.<br>
+                    Happy download</p>
+                <div>
+                    <i class="fa-brands fa-google-play"></i>
+                    <i class="fa-brands fa-apple"></i>
+                    <i class="fa-brands fa-java"></i>
+                </div>
+                <div class="action">
+                    <button class="edit">edit</button>
+                    <button class="delete">delete</button>
+                </div>
+            </div>
+
+            </div>
+            
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>

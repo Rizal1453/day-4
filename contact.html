@@ -1,0 +1,69 @@
+<html>
+    
+    <head>
+        <title>Latihan 2</title>
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <nav>
+        <div class="nav-left">
+          <ul>
+            <li>
+              <img src="images/logo.png" alt="logo" height="35px" />
+            </li>
+            <li>
+              <a href="index.html"><span class="text-home">Home</span></a>
+            </li>
+            <li>
+              <a href="#"><span class="text-project">My Project</span></a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="nav-right">
+          <a href="contact.html">Contact Me</a>
+        </div>
+      </nav>
+    <body>
+        
+        <form>
+            <H1>GET IN TOUCH</H1>
+
+            <div class="name">
+                <label for="input-name">Name</label>
+                <input type="text" id="input-name" required>
+            </div>
+
+            <div>
+                <label for="input-email">Email</label>
+                <input type="text" id="input-email" required>
+            </div>
+
+            <div>
+                <label for="input-phone">Phone Number</label>
+                <input type="number" id="input-phone">
+            </div>
+        
+            <div>
+                <label for="input-subject">Subject</label>
+                <select id="input-subject">
+                    <option value="" hidden>Select</option>
+                    <option>Frontend</option>
+                    <option>Backend</option>
+                    <option>Fullstack</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="input-message">Your Message</label>
+                <textarea rows="5" cols="10" id="input-message"></textarea>
+            </div>
+
+            <div class="btn">
+                <button type="button" onclick="submitData()">Submit</button>
+            </div>
+        </form>
+        
+        <script src="contact.js"></script>
+        </script>
+    </body>
+</html>

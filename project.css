@@ -1,0 +1,141 @@
+*,html {
+    text-decoration: none;
+    list-style-type:none;
+}
+body{
+    background-color: #b5b5b5;
+   margin: 0px;
+   padding: 0px;
+}
+nav{
+    background-color: #e2dfdf;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    width: 100%;
+}
+.nav-left{
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.nav-right{
+
+    flex: 50%;
+    text-align: end;}
+
+nav ul{
+    align-items: center;
+    display: flex;
+}
+nav ul li {
+    padding: 10px;
+}
+.nav-right a{
+    background-color: black;
+    color: white;
+    justify-content: end;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+form{  
+    font-family: sans-serif;
+    width: 350px;
+    margin: 50px auto ;
+    padding: 10px;
+    color: black;
+}
+form div{
+    margin-top: 15px;
+    }
+input,textarea{
+    width: 100%;
+    padding: 8px 0px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+.date{
+
+    display: flex;
+    width: 100%;
+    box-sizing:border-box ;
+}
+.start-date{
+flex: 50%;
+margin-right: 30px;
+}
+.end-date{
+    flex: 50%;
+}
+.radio{
+    background-color: slateblue;
+    display: flex;
+    width: 100%;
+}
+.radio-left{
+    background-color: coral;
+    flex: 50%;
+    width: 100%;
+}
+.radio-right{
+    background-color: yellowgreen;
+    flex: 50%;
+    width: 100%;
+
+}
+table {
+    width: 70%;
+  }
+  
+  input[type="checkbox"] {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+  }
+  
+  form table label {
+    font-size: 16px;
+  }
+  .attach{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex: 100%;
+  }
+  .attach-left{
+    align-items: center;
+   margin-left: 3px;
+    flex: 50%;
+  
+  }
+
+  .attach-right{
+    margin-top: 2px;
+    padding: 3px;
+    justify-content: end;
+  }
+  .body-bottom{
+    background-color: white;
+    text-align: center;
+    
+  }
+  .card {
+    margin: 30px 30px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container-card {
+    padding: 2px 16px;
+}
+.body-bottom .card img{
+  width: 100%;
+}

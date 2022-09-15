@@ -1,0 +1,99 @@
+*,html {
+    text-decoration: none;
+    list-style-type:none;
+}
+body{
+   margin: 0px;
+   padding: 0px;
+}
+nav{
+    background-color: #e2dfdf;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    width: 100%;
+}
+.nav-left{
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.nav-right{
+    flex: 50%;
+    text-align: end;}
+
+nav ul{
+    align-items: center;
+    display: flex;
+}
+nav ul li {
+    padding: 10px;
+}
+.nav-right a{
+    background-color: black;
+    color: white;
+    justify-content: end;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+.container {
+    padding: 25px;
+    text-align: center;
+}
+h2{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: -20px;
+}
+.content{
+    display: flex;
+    width: 100%;
+   margin: 20px;
+}
+.content-left{
+    flex: 60%;
+    padding-left: 35px;
+}
+.content-right{
+   margin-top: 35px;
+    flex: 40%;
+    padding-left: 60px;
+}
+i{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.technologi{
+   
+    margin-top: -450;
+    display: flex;
+    width: 100%;
+
+}
+.tech-left{
+   
+    flex: 50%;
+  
+}
+.tech-right{
+
+    flex:50%;
+    align-items: flex-start;
+}
+.technologi ul i {
+
+    align-items: flex-start;
+    font-size: 20px;
+    margin-left: -40px;
+}
+.technologi ul {
+    
+    justify-content: first baseline;
+}
+.character{
+    margin-left: 10px;
+}
