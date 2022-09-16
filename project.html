@@ -3,18 +3,19 @@
 <head>
     <title>latihan 4</title>
     <link rel="stylesheet" href="project.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <nav>
         <div class="nav-left">
             <ul>
                 <li><img src="images/logo.png" alt="logo" width="35px"></li>
-                <li>Home</li>
+                <a href="index.html">Home</a>
                 <li>My Project</li>
             </ul>
         </div>
         <div class="nav-right">
-            <a href="#">Contact Me</a>
+            <a href="contact.html">Contact Me</a>
         </div>
     </nav>
     <div >
@@ -44,22 +45,22 @@
                 <table>
                   <tr>
                     <td>
-                      <input type="checkbox" name="Node Js" id="nodejs" />
-                      <label for="nodejs">Node Js</label>
+                      <input type="checkbox"  id="nodejs" value="node" />
+                      <label for="nodejs" >Node Js</label>
                     </td>
                     <td>
-                      <input type="checkbox" name="Next Js" id="nextjs" />
-                      <label for="nextjs">Next Js</label>
+                      <input type="checkbox" id="vuejs" value="vue" />
+                      <label for="vuejs">Vue JS</label>
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <input type="checkbox" name="React JS" id="reactjs" />
+                      <input type="checkbox" id="reactjs" value="react" />
                       <label for="reactjs">React JS</label>
                     </td>
                     <td>
-                      <input type="checkbox" name="Typescript" id="typescript" />
-                      <label for="typescript">Typescript</label>
+                      <input type="checkbox" id="java" value="java" />
+                      <label for="java">Java</label>
                     </td>
                   </tr>
                 </table>
@@ -86,19 +87,24 @@
     <hr/>
     <div class="body-bottom"> 
      <h1>MY PROJECT</h1>  
-     <div class="container" id="card1" style="
-                                    display:flex ;
-                                    flex-wrap: wrap;">
-          <div class="card" style="
-                                    margin: 20px auto;
-                                    width: 250px;
-                                    text-align: center;">
+     <div class="container" id="card1">
+          <div class="card">
           <img src="images/myprofil.jpeg" alt="" width="100%">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, unde!</p>
-          <div class="content">
+          <p>Dumbways Mobile App-2021</p>
+          <p>duration : 3 bulan</p>
+            <div class="content">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione necessitatibus ipsam hic nesciunt magnam sint saepe, recusandae fugiat repellat velit molestias eligendi iusto tempora temporibus laboriosam. Iure consequuntur dicta hic!
-
-          </div>
+            <div> 
+              <i class="fa-brands fa-node-js" id="nodejs" >node</i>
+              <i class="fa-brands fa-react" id="reactjs" >react</i>
+              <i class="fa-brands fa-vuejs" id="vuejs" >vue</i>
+              <i class="fa-brands fa-java" id="java">java</i>
+            </div>
+            <div>
+              <button>edit</button>
+              <button>delecte</button>
+            </div>
+            </div>
           </div>
      </div>
             
@@ -107,31 +113,3 @@
 </body>
 </html>
 
-<!-- 
-<div class="container" id="card1" style="
-display: flex;
-flex-wrap: wrap;
-
-" >
-<div class="card" style="
-
-
-" >
-<div style="margin-right: 20px; background-color: pink;">
-<img src="images/bill-gates.jpg" alt="" width="100%">
-
-<h3>Dumbways Mobile App - 2021</h3>
-<p class="time">durasi : 3 bulan</p>
-<br>
-<p>App that used for dumbways student, it was
-deployed and can downloaded on playstore.<br>
-Happy download</p>
-<div>
-<i class="fa-brands fa-google-play"></i>
-<i class="fa-brands fa-apple"></i>
-<i class="fa-brands fa-java"></i>
-</div>
-<div class="action">
-<button class="edit">edit</button>
-<button class="delete">delete</button>
-</div> -->

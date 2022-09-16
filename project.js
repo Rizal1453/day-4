@@ -5,15 +5,34 @@ function addData (event){
         let projectName = document.getElementById("input-project").value
         let startDate = document.getElementById("input-start").value
         let endDate = document.getElementById("input-end").value
-        let nodeJs = document.getElementById("nodeJs").checked
-        let nextJs = document.getElementById("nextJs").checked
-        let reactJs = document.getElementById("reactJs").checked
-        let typescript = document.getElementById("typescript").checked
+        let description = document.getElementById("input-description").value
+        let nodeJs = document.getElementById("nodejs").checked
+        let vueJs = document.getElementById("vuejs").checked
+        let reactJs = document.getElementById("reactjs").checked
+        let java = document.getElementById("java").checked
 
         let image = document.getElementById("input-image").files
         image = URL.createObjectURL(image[0])
-   
-       
+    
+
+        if(nodeJs){
+           nodeJs = document.getElementById("nodejs").value
+        } else{
+            nodeJs = ""
+        } 
+        if(vueJs){
+            vueJs = document.getElementById("vuejs").value
+        } else{
+             vueJs = ""
+         } if(reactJs){
+            reactJs = document.getElementById("reactjs").value
+         } else{
+             reactJs = ""
+         } if(java){
+            java = document.getElementById("java").value
+         } else{
+             java = ""
+         } 
 
     let tampung = {
         projectName,
@@ -22,14 +41,16 @@ function addData (event){
         description,
         image,
         nodeJs,
-        nextJs,
+        vueJs,
         reactJs,
-        typescript
-        
+        java,
+    durasi:durasi(new Date (startDate),new Date(endDate)) 
+
     }
     data.push(tampung);
     console.log(data);
     renderform();
+    
     }
 
     function renderform(){
@@ -42,22 +63,37 @@ function addData (event){
 
 
            document.getElementById("card1").innerHTML +=`
-           <div class="card" style="
-           margin: 20px auto;
-           width: 250px;
-           text-align: center;">
-            <img src="${data[index].image}" alt="" width="100%">
-            <p>${data[index].startDate}</p>
-            <div class="content">
-            ${data[index.description]}
-            <div class="action">
-            <button class="edit">edit</button>
-            <button class="delete">delete</button>
-            </div>
+           <div class="card">
+           <img src="${data[index].image}" alt="" width="100%">
+           <p>${data[index].projectName}</p>
+           <p>duration : ${data[index].durasi}</p>
+             <div class="content">
+             ${data[index].description}
+             <div> 
+               <i class="fa-brands fa-${data[index].nodeJs}"></i>
+               <i class="fa-brands fa-${data[index].reactJs}"></i>
+               <i class="fa-brands fa-${data[index].vueJs}js"></i>
+               <i class="fa-brands fa-${data[index].java}"></i>
+             </div>
+             <div>
+               <button>edit</button>
+               <button>delete</button>
+             </div>
+             </div>
+           </div>
+           
 
-            </div>
-            </div>
-                `
+            `
+        }
+    }
+    function durasi(start,end){
+        let time = end-start
 
-       }
+        let milisecond = 1000 // milisecond
+        let secondInHours = 3600 // 1 jam 3600 detik
+        let hoursInDay = 24 // 1 hari 24 jam
+
+        let hari = Math.floor (time/(milisecond*secondInHours*hoursInDay))
+        return `${hari} hari ` 
+
     }
