@@ -72,7 +72,7 @@ function addData (event){
              <div> 
                <i class="fa-brands fa-${data[index].nodeJs}"></i>
                <i class="fa-brands fa-${data[index].reactJs}"></i>
-               <i class="fa-brands fa-${data[index].vueJs}js"></i>
+               <i class="fa-brands fa-${data[index].vueJs}"></i>
                <i class="fa-brands fa-${data[index].java}"></i>
              </div>
              <div>
@@ -92,8 +92,24 @@ function addData (event){
         let milisecond = 1000 // milisecond
         let secondInHours = 3600 // 1 jam 3600 detik
         let hoursInDay = 24 // 1 hari 24 jam
+        
 
         let hari = Math.floor (time/(milisecond*secondInHours*hoursInDay))
-        return `${hari} hari ` 
+        
+        let bulan = Math.floor(hari/30)
+        console.log(bulan);
+
+        
+        let tahun = Math.floor(bulan/12)
+        console.log(tahun);
+         
+        if(tahun > 0){
+            return `${tahun} tahun`
+        } else if (bulan >0){
+            return `${bulan} bulan`
+        } else {
+            return `${hari} hari`
+        }
+        
 
     }

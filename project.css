@@ -39,6 +39,12 @@ nav ul li {
     border-radius: 5px;
     margin-right: 8px;
 }
+.nav-left a:hover{
+    color: grey;
+}
+.nav-right a:hover{
+    color: #b5b5b5;
+}
 form{  
     font-family: sans-serif;
     width: 350px;
@@ -127,15 +133,20 @@ form table label {
 }
   
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px 0 black;
 }
   
 .card {
+    word-break: break-all;
     padding: 2px 16px;
     margin: 20px auto;
     width: 250px;
     text-align: center;
+    box-shadow: 0 8px 16px 0 #3e3e3e;
 }
 .body-bottom .card img{
     width: 100%;
+}
+.card a{
+    color: black;
 }

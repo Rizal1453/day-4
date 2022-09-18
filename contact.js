@@ -29,32 +29,32 @@ let a = document.createElement("a");
   a.target = "_blank";
   a.click();
 }
- let namaSiswa=["bagus","rizal"]
- console.log(namaSiswa[1]);
+//  let namaSiswa=["bagus","rizal"]
+//  console.log(namaSiswa[1]);
 
- let satu ={
-  nama : "RIzal",
-  alamat :"jln bangka",
- }
-let dua = {
-  nama :"bagus",
-  alamat:"tanggerang"
-  }
+//  let satu ={
+//   nama : "RIzal",
+//   alamat :"jln bangka",
+//  }
+// let dua = {
+//   nama :"bagus",
+//   alamat:"tanggerang"
+//   }
  
- console.log(dua);
- let datapersonal=[{nama:aziz}]
+//  console.log(dua);
+//  let datapersonal=[{nama:aziz}]
 
- let data =[]
+//  let data =[]
 
 
 
- function addData(){
-  let person={
-    nama:"samsul",
-    address: "jakarta"
+//  function addData(){
+//   let person={
+//     nama:"samsul",
+//     address: "jakarta"
 
-  }
-  data.push(person)
-  console.log(data);
+//   }
+//   data.push(person)
+//   console.log(data);
 
- }
+//  }
