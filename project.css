@@ -104,6 +104,16 @@ input[type="checkbox"] {
 form table label {
     font-size: 16px;
 }
+.btn-form{
+    text-align: end;
+}
+.btn-form button{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    
+}
 .attach{
     background-color: white;
     border-radius: 10px;
